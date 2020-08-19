@@ -1,9 +1,9 @@
 html {
-  height: 100vh;
+  height: 60000px;
 }
 
 body {
-  height: 500vh;
+  height: 60000px;
   background: #000;
 }
 
@@ -32,7 +32,7 @@ h1 {
 }
 
 #pseudo-window {
-  height: 3000px;
+  height: 7000px;
   width: 100%;
   background: #616060;
   margin: 0;
@@ -49,7 +49,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color : red;
+  color: red;
 }
 
 .slide h1 {
@@ -73,4 +73,12 @@ h1 {
 
 #end {
   background: green;
+}
+
+.frame_animation {
+  opacity: 0;
+  position: fixed;
+  font-size: 50px;
+  left: 0;
+  right: 0;
 }
