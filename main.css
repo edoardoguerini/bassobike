@@ -76,9 +76,11 @@ h1 {
 }
 
 .frame_animation {
-  opacity: 0;
+  opacity: 1;
   position: fixed;
   font-size: 50px;
   left: 0;
   right: 0;
+  color: red;
+  z-index: 55555;
 }

@@ -100,9 +100,9 @@ const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
 
 if (canUseWebP()) {
-  frameCount = 595
+  frameCount = 1089
 } else {
-  frameCount = 875
+  frameCount = 1089
 }
 // const currentFrame = index => (
 //   `https://basso.mahiz.dev/Sequence/SV${index.toString().padStart(4, '')}.jpg`
@@ -127,12 +127,66 @@ const updateImage = index => {
   img.src = currentFrame(index);
   context.drawImage(img, 0, 0);
 }
-
+var currentframe = 0;
 const animationText = index => {
   console.log(index);
-  if (jQuery('.frame_animation_' + index).length) {
-    gsap.to('.frame_animation_' + index, { opacity: 1, color: 'red', duration: 0.1 })
+  if (index != currentframe) {
+    currentframe = index;
   }
+  var data = {
+    "1": {
+      "text": "hello all good I am at slide 1",
+      "position": {
+        "large": {
+          "from": { "top": 10, "left": 20 },
+          "to": { "top": 20, "left": 200, duration: 1 }
+        }
+      }
+    },
+    "2": {
+      "text": "Now I am at slide 2",
+      "position": {
+        "large": {
+          "from": { "top": 10, "left": 20 },
+          "to": { "top": 20, "left": 200, duration: 1 }
+        }
+      }
+    },
+    "3": {
+      "text": "Now I am at slide 3",
+      "position": {
+        "large": {
+          "from": { "top": 10, "left": 20 },
+          "to": { "top": 20, "left": 200, duration: 1 }
+        }
+      }
+    },
+    "4": {
+      "text": "Now I am at slide 4",
+      "position": {
+        "large": {
+          "from": { "top": 10, "left": 20 },
+          "to": { "top": 20, "left": 200, duration: 1 }
+        }
+      }
+    },
+    "5": {
+      "text": "Now I am at slide 5",
+      "position": {
+        "large": {
+          "from": { "top": 10, "left": 20 },
+          "to": { "top": 20, "left": 200, duration: 1 }
+        }
+      }
+    }
+  };
+  // if (jQuery('.frame_animation_' + index).length) {
+  windowsize = 'large'
+  console.log(data[index]);
+  jQuery('.frame_animation').html(data[index]['text'])
+  gsap.set('.frame_animation', data[index]['position'][windowsize]['from'])
+  gsap.to('.frame_animation', data[index]['position'][windowsize]['to'])
+  // }
 
 }
 
