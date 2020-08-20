@@ -144,7 +144,7 @@ const animationText = index => {
       }
     },
     "2": {
-      "text": "Now I am at slide 2",
+      "text": "hello all good I am at slide 1",
       "position": {
         "large": {
           "from": { "top": 10, "left": 20 },
@@ -153,29 +153,29 @@ const animationText = index => {
       }
     },
     "3": {
-      "text": "Now I am at slide 3",
+      "text": "hello all good I am at slide 1",
       "position": {
         "large": {
           "from": { "top": 10, "left": 20 },
-          "to": { "top": 20, "left": 200, duration: 1 }
+          "to": { "top": 200, duration: 1 }
         }
       }
     },
     "4": {
-      "text": "Now I am at slide 4",
+      "text": "hello all good I am at slide 1",
       "position": {
         "large": {
           "from": { "top": 10, "left": 20 },
-          "to": { "top": 20, "left": 200, duration: 1 }
+          "to": { "top": 300, duration: 1 }
         }
       }
     },
     "5": {
-      "text": "Now I am at slide 5",
+      "text": "hello all good I am at slide 1",
       "position": {
         "large": {
           "from": { "top": 10, "left": 20 },
-          "to": { "top": 20, "left": 200, duration: 1 }
+          "to": { "top": 20, "left": 400, duration: 1 }
         }
       }
     }
